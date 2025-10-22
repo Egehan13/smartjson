@@ -278,7 +278,7 @@ smartJSON.changelog = (obj1, obj2) => {
 
   // Boşsa
   if (lines.length === 0) {
-    return "✅ Hiçbir değişiklik yok.";
+    return " Hiçbir değişiklik yok.";
   }
 
   return lines.join("\n");
@@ -519,3 +519,4 @@ smartJSON.autoExtract = (rawText, options = {}) => {
 
   global.smartJSON = smartJSON;
 })(typeof window !== "undefined" ? window : globalThis);
+
